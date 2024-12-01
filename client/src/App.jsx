@@ -47,8 +47,6 @@ const App = () => {
                         '/',
                         '/contact',
                         '/chatbot',
-                        '/home',
-                        '/Home1',
                         '/course',
                         '/skill',
                         '/aboutpage',
@@ -80,10 +78,8 @@ const App = () => {
                                         <Route path="/contact" element={<ContactSection />} />
                                         <Route path='/forgot-password' element={<ForgotPassword />} />
                                         <Route path="/" element={<Home />} />
-                                        <Route path="/Home1" element={<Course />} />
                                         <Route path="/login" element={<Login />} />
                                         <Route path='/signup' element={<Signup />} />
-                                        <Route path='/home' element={<Home />} />
                                         <Route path="/course" element={<CourseDisplay />} />
                                         <Route path="/skill" element={<Skills />} />
                                         <Route path='/aboutpage' element={<About />} />

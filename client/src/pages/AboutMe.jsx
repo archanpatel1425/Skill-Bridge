@@ -31,7 +31,7 @@ const AboutMe = () => {
                         </div>
                         <div className="md:w-1/2 p-8">
                             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                                Hi! I’m <b>JAY PANDYA</b> A Full Stack Developer Skilled In Building Responsive, High-Performance Applications Using JavaScript, React, Node.js, and MongoDB. I Enjoy Txackling Challenges And Creating Impactful Products.
+                                Hi! I’m <b>Archan Patel</b> A Full Stack Developer Skilled In Building Responsive, High-Performance Applications Using JavaScript, React, Node.js, and MongoDB. I Enjoy Txackling Challenges And Creating Impactful Products.
                             </p>
                             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                                 Outside of Coding, I Stay Updated With New Tech, Contribute To Open-Source, And Engage With The Developer Community To Share Insights And Ideas.

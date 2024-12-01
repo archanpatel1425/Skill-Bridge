@@ -287,36 +287,6 @@ MY_IP=your_ip_here
 
 ```
 
-## 👥 Team & Contributions
-
-1 **[jaydoshi2](https://github.com/jaydoshi2)**
-  - Led project ideation and planning
-  - Designed and implemented database architecture
-  - Implemented JWT authentication system
-  - Established project architecture and code structure
-  - Managed Django integration for AI services made by xKirtan.
-
-2 **[archanpatel1425](https://github.com/archanpatel1425)**
-  - Developed comprehensive course page functionality
-  - Implemented responsive design across all pages
-  - Built core course interaction features
-
-3 **[1JAYPANDYA1](https://github.com/1JAYPANDYA1)**
-  - Developed video page functionality (like/dislike system)
-  - Implemented certificate generation system
-  - Enhanced overall website styling and UI polish
-  - Managed video-related backend integrations
-
-4 **[kavya-trivedi](https://github.com/kavya-trivedi)**
-  - Designed and implemented responsive home page
-  - Created auxiliary pages (About, Contact, Profile)
-  - Built supporting backend services for user-facing pages
-
-5 **[xKIRTAN](https://github.com/xKIRTAN)**
-  - Developed chatbot system architecture
-  - Created analytics dashboard and visualizations
-  - Implemented content-based course recommendation engine
-  - Designed and integrated ML algorithms
 
 ## ⚖️ License
 SkillsBridge is licensed under the MIT License. See the LICENSE file for more details.
