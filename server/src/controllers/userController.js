@@ -6,43 +6,43 @@ const prisma = new PrismaClient();
 const Razorpay = require('razorpay');
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_pVMPiZnpHDsa6g',
-  key_secret: '0ZiI8iZ185Dx20ZY9S1Mck12'
+  key_id: process.env.KEY_ID,
+  key_secret: process.env.KEY_SECRET
 });
 
 exports.getUserCourses = async (req, res) => {
-    try {
-        const { userId } = req.body; // Assuming userId is sent as a string in the request body
+  try {
+    const { userId } = req.body; // Assuming userId is sent as a string in the request body
 
-        const userCourses = await prisma.userCourseProgress.findMany({
-            where: {
-                userId: userId,
-            },
-            select: {
-                completed_course: true, // Percentage of course completion
-                enrolledAt: true,       // Date when the user enrolled
-                course: {
-                    select: {
-                        title: true,
-                        thumbnail_pic_link: true,
-                        description:true, // Course thumbnail image
-                        course_id:true,
-                    },
-                },
-            },
-        });
+    const userCourses = await prisma.userCourseProgress.findMany({
+      where: {
+        userId: userId,
+      },
+      select: {
+        completed_course: true, // Percentage of course completion
+        enrolledAt: true,       // Date when the user enrolled
+        course: {
+          select: {
+            title: true,
+            thumbnail_pic_link: true,
+            description: true, // Course thumbnail image
+            course_id: true,
+          },
+        },
+      },
+    });
 
-          res.status(200).json(userCourses); // Send the result as a response
+    res.status(200).json(userCourses); // Send the result as a response
 
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: "ERROR IN GETTING USER COURSES" }); // Send an error response
-    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "ERROR IN GETTING USER COURSES" }); // Send an error response
+  }
 };
 
-exports.getCertificateOfUser = async(req,res) =>{
-    
-} 
+exports.getCertificateOfUser = async (req, res) => {
+
+}
 
 // server/src/controllers/contactController.js
 
